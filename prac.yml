@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: true
+  tasks:
+    - name: to create a docker container
+      docker_container:
+      name: nginx-container
+      image: nginx
+      ports:
+        - "8085:80"
