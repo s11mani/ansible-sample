@@ -4,7 +4,7 @@
   tasks:
     - name: to create a docker container
       docker_container:
-      name: nginx-container
-      image: nginx
-      ports:
-        - "8085:80"
+        name: nginx-container
+        image: nginx
+        ports:
+          - "8085:80"
